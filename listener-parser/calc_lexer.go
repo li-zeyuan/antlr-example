@@ -1,13 +1,12 @@
-// Code generated from Calc.g4 by ANTLR 4.10.1. DO NOT EDIT.
+// Code generated from Calc.g4 by ANTLR 4.13.2. DO NOT EDIT.
 
 package parser
 
 import (
 	"fmt"
+	"github.com/antlr4-go/antlr/v4"
 	"sync"
 	"unicode"
-
-	"github.com/antlr/antlr4/runtime/Go/antlr"
 )
 
 // Suppress unused import error
@@ -22,37 +21,37 @@ type CalcLexer struct {
 	// TODO: EOF string
 }
 
-var calclexerLexerStaticData struct {
+var CalcLexerLexerStaticData struct {
 	once                   sync.Once
 	serializedATN          []int32
-	channelNames           []string
-	modeNames              []string
-	literalNames           []string
-	symbolicNames          []string
-	ruleNames              []string
-	predictionContextCache *antlr.PredictionContextCache
+	ChannelNames           []string
+	ModeNames              []string
+	LiteralNames           []string
+	SymbolicNames          []string
+	RuleNames              []string
+	PredictionContextCache *antlr.PredictionContextCache
 	atn                    *antlr.ATN
 	decisionToDFA          []*antlr.DFA
 }
 
 func calclexerLexerInit() {
-	staticData := &calclexerLexerStaticData
-	staticData.channelNames = []string{
+	staticData := &CalcLexerLexerStaticData
+	staticData.ChannelNames = []string{
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN",
 	}
-	staticData.modeNames = []string{
+	staticData.ModeNames = []string{
 		"DEFAULT_MODE",
 	}
-	staticData.literalNames = []string{
+	staticData.LiteralNames = []string{
 		"", "'('", "')'", "'*'", "'/'", "'+'", "'-'",
 	}
-	staticData.symbolicNames = []string{
+	staticData.SymbolicNames = []string{
 		"", "", "", "MUL", "DIV", "ADD", "SUB", "NUMBER", "WHITESPACE",
 	}
-	staticData.ruleNames = []string{
+	staticData.RuleNames = []string{
 		"T__0", "T__1", "MUL", "DIV", "ADD", "SUB", "NUMBER", "WHITESPACE",
 	}
-	staticData.predictionContextCache = antlr.NewPredictionContextCache()
+	staticData.PredictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
 		4, 0, 8, 41, 6, -1, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2,
 		4, 7, 4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 1, 0, 1, 0, 1, 1, 1, 1, 1,
@@ -88,7 +87,7 @@ func calclexerLexerInit() {
 // NewCalcLexer(). You can call this function if you wish to initialize the static state ahead
 // of time.
 func CalcLexerInit() {
-	staticData := &calclexerLexerStaticData
+	staticData := &CalcLexerLexerStaticData
 	staticData.once.Do(calclexerLexerInit)
 }
 
@@ -97,13 +96,13 @@ func NewCalcLexer(input antlr.CharStream) *CalcLexer {
 	CalcLexerInit()
 	l := new(CalcLexer)
 	l.BaseLexer = antlr.NewBaseLexer(input)
-	staticData := &calclexerLexerStaticData
-	l.Interpreter = antlr.NewLexerATNSimulator(l, staticData.atn, staticData.decisionToDFA, staticData.predictionContextCache)
-	l.channelNames = staticData.channelNames
-	l.modeNames = staticData.modeNames
-	l.RuleNames = staticData.ruleNames
-	l.LiteralNames = staticData.literalNames
-	l.SymbolicNames = staticData.symbolicNames
+	staticData := &CalcLexerLexerStaticData
+	l.Interpreter = antlr.NewLexerATNSimulator(l, staticData.atn, staticData.decisionToDFA, staticData.PredictionContextCache)
+	l.channelNames = staticData.ChannelNames
+	l.modeNames = staticData.ModeNames
+	l.RuleNames = staticData.RuleNames
+	l.LiteralNames = staticData.LiteralNames
+	l.SymbolicNames = staticData.SymbolicNames
 	l.GrammarFileName = "Calc.g4"
 	// TODO: l.EOF = antlr.TokenEOF
 
